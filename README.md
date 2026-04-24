@@ -1,20 +1,71 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 📈 StockBoard (주식보드) - 초보자를 위한 투자 대시보드 가이드북
 
-# Run and deploy your AI Studio app
+**StockBoard**에 오신 것을 환영합니다! 이 프로젝트는 복잡한 금융 데이터를 직관적인 UI로 정제하여, 초보 투자자도 시장의 흐름을 한눈에 파악하고 기업의 진정한 가치를 분석할 수 있도록 돕는 스마트 대시보드입니다.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/76359161-9dca-4bf4-b06e-da02f3c03678
+## 🌟 프로젝트 소개
 
-## Run Locally
+주식 투자는 단순히 숫자를 보는 것이 아니라, **시장의 흐름**과 **기업의 건강 상태**를 읽는 과정입니다. StockBoard는 최신 AI 기술(Gemini)과 구글 파이낸스 데이터를 결합하여 2026년 현재의 실시간 시장 상황을 가장 정확하게 전달합니다.
 
-**Prerequisites:**  Node.js
+- **실시간성**: Google Search grounding 기술을 통해 가장 최신화된 주가 데이터를 제공합니다.
+- **직관적 디자인**: 복잡한 표 대신 색상과 그래프를 활용하여 상승과 하락의 흐름을 즉시 파악할 수 있습니다.
+- **데이터 기반 분석**: 단순히 '얼마인가'를 넘어 '왜 좋은가'를 보여주는 기업 건강검진 기능을 포함합니다.
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🚀 주요 기능 가이드
+
+### 1. 시장 전광판 (Market Ticker)
+화면 상단에서 쉴 새 없이 움직이는 띠를 확인하세요.
+- **KOSPI / KOSDAQ**: 대한민국 주식 시장의 전체적인 온도입니다.
+- **NASDAQ / S&P 500**: 미국 글로벌 시장의 흐름을 보여줍니다.
+- **USD/KRW**: 환율의 변동은 외국인 투자자들의 움직임을 예측하는 중요한 힌트가 됩니다.
+
+### 2. 스마트 포트폴리오 탭
+본인이 관심 있는 섹터별로 종목을 나누어 볼 수 있습니다.
+- **국내 주식**: 삼성전자, SK하이닉스 등 국내 우량주 분석.
+- **해외 주식**: 엔비디아(NVDA), 애플(AAPL) 등 글로벌 빅테크 기업.
+- **ETF**: 분산 투자의 핵심인 KODEX, TIGER 상품군.
+
+### 3. 기업 건강검진 (Company Health Check)
+종목을 클릭하면 나타나는 상세 분석 화면입니다. 초보 투자자가 꼭 봐야 할 4가지 지표를 제공합니다.
+- **매출액 (TTM)**: 기업이 물건을 얼마나 많이 팔았는지 보여줍니다.
+- **영업이익률**: 매출 중에서 실제로 남긴 이익의 비율입니다. (효율성 확인)
+- **ROE (자기자본이익률)**: 주주의 돈을 얼마나 잘 굴려 수익을 냈는지 보여주는 '장사의 실력'입니다.
+- **PER (주가수익비율)**: 기업의 이익 대비 주가가 싼지 비싼지를 판단하는 척도입니다.
+
+### 4. 실시간 트렌드 (Top Movers)
+지금 시장에서 가장 뜨겁게 거래되거나 변동폭이 큰 종목들을 순위별로 보여줍니다.
+
+---
+
+## 🛠 기술 스택 (Technical Stack)
+
+이 애플리케이션은 다음과 같은 현대적인 기술로 구축되었습니다:
+
+- **Frontend**: React 18, Vite, Tailwind CSS
+- **Animation**: Motion (motion/react)
+- **Visualization**: Recharts (주가 차트 구현)
+- **AI Engine**: Google Gemini API (with Search Grounding)
+- **Icons**: Lucide React
+
+---
+
+## 📖 초보자를 위한 팁!
+
+1. **빨간색과 파란색**: 한국 시장 기준, **빨간색은 상승**, **파란색은 하락**을 의미합니다. (설정에서 글로벌 기준으로 변경 가능합니다.)
+2. **거래량 확인**: 주가 변동과 함께 거래량이 터졌다면, 그것은 시장의 강력한 신호일 확률이 높습니다.
+3. **분석 도구 활용**: PER이 업종 평균보다 낮다면 해당 기업이 현재 저평가되어 있을 가능성이 있으니 주목해 보세요!
+
+---
+
+## 💻 설치 및 실행 방법
+
+1. **환경 변수 설정**: `.env` 파일에 Gemini API 키를 설정해야 실시간 AI 기능을 사용할 수 있습니다.
+2. **패키지 설치**: `npm install`
+3. **실행**: `npm run dev`
+
+---
+
+**StockBoard**와 함께 스마트한 투자의 첫걸음을 시작해 보세요! 🚀
