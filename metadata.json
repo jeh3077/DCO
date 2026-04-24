@@ -1,0 +1,6 @@
+{
+  "name": "StockBoard",
+  "description": "A high-fidelity financial dashboard for monitoring domestic and international stocks, ETFs, and market indices.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
